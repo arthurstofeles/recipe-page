@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
+}
+
+header {
+    padding-top: 52px;
+    padding-bottom: 48px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333333;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #333333;
+
+    display: block;
+    position: relative;
+    padding-left: 38px;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type='checkbox'] {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    max-width: 968px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.dots::before {
+    content: " ";
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    left: 0;
+    top: 6px;
+    background-image: url('./Images/6dots.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.section-title {
+    margin-bottom: 28px;
+}

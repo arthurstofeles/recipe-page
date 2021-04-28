@@ -1,9 +1,12 @@
-import './App.css';
+import React from "react";
+import RecipePage from "./Pages/RecipePage";
 
-function App() {
+const App = () => {
   return (
-      <div>teste</div>
-  );
-}
+    <div>
+      <RecipePage />
+    </div>
+  )
+};
 
-export default App;
+export default App
