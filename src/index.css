@@ -60,6 +60,7 @@ label {
     display: block;
     position: relative;
     padding-left: 38px;
+    margin-bottom: 12px;
     cursor: pointer;
 
     -webkit-user-select: none;
@@ -75,6 +76,24 @@ input[type='checkbox'] {
     width: 0;
 }
 
+footer {
+    text-align: center;
+    padding-bottom: 24px;
+    padding-top: 93px;
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+footer p a {
+    color: #828282;
+    font-weight: 700;
+}
+
 .container {
     max-width: 968px;
     margin: 0 auto;
@@ -88,12 +107,12 @@ input[type='checkbox'] {
     align-items: flex-start;
 }
 
-.col-75 {
-    max-width: 75%;
+.col-60 {
+    max-width: 60%;
 }
 
-.col-25 {
-    max-width: 25%;
+.col-40 {
+    max-width: 40%;
 }
 
 .dots::before {
@@ -111,6 +130,7 @@ input[type='checkbox'] {
 
 .section-title {
     margin-bottom: 28px;
+    margin-top: 28px;
 }
 
 .checkmark {
@@ -190,4 +210,41 @@ label input[type='checkbox']:checked ~ .checkmark::after {
     font-size: 14px;
     line-height: 17px;
     color: #333333;
+}
+
+.steps {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 31px;
+}
+
+.steps span {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 0 13px 6px 13px;
+    background: #F2994A;
+    border-radius: 6px;
+    margin-right: 15px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    display: block;
+}
+
+.steps p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.source {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #BDBDBD;
 }

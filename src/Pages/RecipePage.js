@@ -12,11 +12,11 @@ const RecipePage = () => {
       <Header />
       <main className="container">
         <div className="row">
-          <div className="col-75" >
+          <div className="col-60" >
             <Ingredients />
             <Instructions />
           </div>
-          <div className="col-25">
+          <div className="col-40">
             <Informations />
           </div>
         </div>
