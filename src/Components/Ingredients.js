@@ -8,15 +8,15 @@ const Ingredients = () => {
 
     return (
         <div>
-            <section className="container">
+            <section>
                 <h2 className="section-title">Ingredients</h2>
                 <div>
                     <h3 style={IngredientsTitles}>Graham Cracker Crust</h3>
                     <div>
                         <div>
-                            <label htmlFor="1">
+                            <label htmlFor="1">1 and 1/2 cups (150g) <strong>graham cracker crumbs</strong> (about 10 full sheet graham crackers)
                                 <input type="checkbox" id="1" />
-                                <span>1 and 1/2 cups (150g) <strong>graham cracker crumbs</strong> (about 10 full sheet graham crackers)</span>
+                                <span className="checkmark"></span>
                             </label>
                         </div>
                     </div>

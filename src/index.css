@@ -81,6 +81,21 @@ input[type='checkbox'] {
     width: 100%;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col-75 {
+    max-width: 75%;
+}
+
+.col-25 {
+    max-width: 25%;
+}
+
 .dots::before {
     content: " ";
     position: absolute;
@@ -96,4 +111,83 @@ input[type='checkbox'] {
 
 .section-title {
     margin-bottom: 28px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: transparent;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+label:hover input[type='checkbox'] ~ .checkmark {
+    background-color: #eee;
+}
+
+label input[type='checkbox']:checked ~ .checkmark {
+    background-color: #F2994A;
+    border-color: #F2994A;
+}
+
+label input[type='checkbox']:checked ~ .checkmark::after {
+    display: block;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 57px 43px 7px 43px;
+    width: 212px;
+}
+
+.card-information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 43px;
+}
+
+.card-icon {
+    margin-right: 14px;
+}
+
+.card .card-information:first-child .card-icon,
+.card .card-information:first-child .card-text p:nth-child(2) {
+    color: #F2994A;
+}
+
+.card-text p:first-child {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #BDBDBD;    
+}
+
+.card-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
 }
