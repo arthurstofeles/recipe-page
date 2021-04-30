@@ -114,6 +114,9 @@ footer p a {
 
 .col-40 {
     max-width: 40%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 25px;
 }
 
 .dots::before {
@@ -291,6 +294,7 @@ label input[type='checkbox']:checked ~ .checkmark::after {
     .col-60 {
         max-width: 100%;
         width: 100%;
+        position: static;
     }
 
     .card {
