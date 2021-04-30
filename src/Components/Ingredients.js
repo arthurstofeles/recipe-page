@@ -2,16 +2,11 @@ import React from "react";
 
 const Ingredients = () => {
 
-    const IngredientsTitles = {
-        marginBottom: "30px",
-        marginTop: "32px"
-    }
-
     return (
         <section>
             <h2 className="section-title">Ingredients</h2>
             <div>
-                <h3 style={IngredientsTitles}>Graham Cracker Crust</h3>
+                <h3 className="section-subtitle">Graham Cracker Crust</h3>
                 <label htmlFor="1">1 and 1/2 cups (150g) <strong>graham cracker crumbs</strong> (about 10 full sheet graham crackers)
                                 <input type="checkbox" id="1" />
                     <span className="checkmark"></span>
@@ -26,7 +21,7 @@ const Ingredients = () => {
                 </label>
             </div>
             <div>
-                <h3 style={IngredientsTitles}>Cheesecake</h3>
+                <h3 className="section-subtitle">Cheesecake</h3>
                 <label htmlFor="4">four 8-ounce blocks (904g) full-fat <strong>cream cheese</strong>, softened to room temperature
                                 <input type="checkbox" id="4" />
                     <span className="checkmark"></span>

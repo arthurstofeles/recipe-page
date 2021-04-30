@@ -48,6 +48,7 @@ h3 {
 img {
     max-width: 100%;
     width: 100%;
+    margin-top: 43px;
 }
 
 label {
@@ -132,6 +133,11 @@ footer p a {
     margin-bottom: 28px;
     margin-top: 28px;
 }
+
+.section-subtitle {
+    margin-bottom: 30px;
+    margin-top: 32px;
+} 
 
 .checkmark {
     position: absolute;
@@ -247,4 +253,123 @@ label input[type='checkbox']:checked ~ .checkmark::after {
     font-size: 16px;
     line-height: 150%;
     color: #BDBDBD;
+}
+
+@media only screen and (max-width: 1024px) {    
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    header p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    header img {
+        margin-top: 28px;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .col-40,
+    .col-60 {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .card .card-information:first-child {
+        width: 100%;
+    }
+
+    .card-information {
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+
+    .card-information .material-icons {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+
+    .card-text p:first-child {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .card-text p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .section-title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 10px;
+        margin-bottom: 13px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 24px;
+        margin-top: 42px;
+    }
+
+    section:nth-child(1) > div:nth-child(2) > h3 {
+        margin-top: 0;
+    }
+
+    label {
+        font-size: 14px;
+        line-height: 25px;
+        padding-left: 29px;
+    }
+
+    div.col-60 > section:nth-child(2) > h2 {
+        margin-top: 30px;
+        margin-bottom: 28px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .steps {
+        margin-bottom: 46px;
+    }
+
+    .steps:nth-child(8) {
+        margin-bottom: 21px;
+    }
+
+    .source {
+        font-size: 12px;
+    }
+
+    footer {
+        padding-top: 129px;
+    }
 }
