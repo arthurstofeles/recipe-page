@@ -16,7 +16,7 @@
 
 ![screenshot](https://github.com/arthurstofeles/recipe-page/blob/main/screenshot.png)
 
-I used this project to pratice, undestand the concepts behind the React components and become familiar with React concepts, such as Components and Props.
+I used this project to practice and become familiar with React concepts, such as Components and Props.
 
 ### Built With
 
